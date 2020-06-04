@@ -38,8 +38,8 @@ function draw() {
   rect(230, 310, 20, 60);
   
   // feet
-  fill("orange");
-  stroke("orange");
+  fill("green");
+  stroke("green");
   rect(155, 330, 50, 20);
   
   rect(245, 330, 50, 20);
