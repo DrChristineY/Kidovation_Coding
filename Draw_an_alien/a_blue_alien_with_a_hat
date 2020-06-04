@@ -33,16 +33,16 @@ function draw() {
   // legs
   fill("yellow");
   stroke("yellow");
-  rect(170, 310, 20, 80);
+  rect(170, 310, 20, 60);
   
-  rect(230, 310, 20, 80);
+  rect(230, 310, 20, 60);
   
   // feet
   fill("orange");
   stroke("orange");
-  rect(150, 340, 60, 30);
+  rect(155, 330, 50, 20);
   
-  rect(250, 340, 60, 30);
+  rect(245, 330, 50, 20);
   
   // body
   fill(110,220,255);
