@@ -1,0 +1,82 @@
+function setup() {
+  createCanvas(600,600);
+	ellipseMode(CENTER);
+	rectMode(CENTER);
+	background("lightgrey");
+}
+function keyPressed(){
+	if (keyCode === LEFT_ARROW) {
+  background("lightgrey");
+  stroke("grey");
+	line(100, 0, 100, 600);
+    line(200, 0, 200, 600);
+    line(300, 0, 300, 600);
+    line(400, 0, 400, 600);
+    line(500, 0, 500, 600);
+    line(600, 0, 600, 600);
+	line(0, 100, 600, 100);
+	line(0, 200, 600, 200);	
+	line(0, 300, 600, 300);
+	line(0, 400, 600, 400);
+	line(0, 500, 600, 500);	
+  } else if (keyCode === RIGHT_ARROW) {
+  background("lightgrey");
+  }
+}
+function mousePressed(){
+	print("X position is "+mouseX);
+	print("Y position is "+mouseY);
+}
+
+function draw() {
+  
+  // legs
+  fill("yellow");
+  stroke("yellow");
+  rect(170, 310, 20, 80);
+  
+  rect(230, 310, 20, 80);
+  
+  // feet
+  fill("orange");
+  stroke("orange");
+  rect(150, 340, 60, 30);
+  
+  rect(250, 340, 60, 30);
+  
+  // body
+  fill(110,220,255);
+  stroke(110,220,255);
+  ellipse(200,200,200,200);
+  
+  
+  // eye
+  fill("darkblue");
+  ellipse(200,180,120,120);
+  
+  fill("white");
+  ellipse(200,185,110,110);
+  
+  fill("black");
+  stroke("black");
+  ellipse(200,190,75,75);
+  
+  fill("white");
+  stroke("white");
+  ellipse(185,175,40,40);
+  
+  ellipse(225,205,20,20);
+  
+  // mouth
+  fill("orange");
+  stroke("orange");
+  ellipse(200,255,35,15);
+  
+  // hat
+  fill("red");
+  stroke("red");
+  triangle(297,51, 197,102, 292,161);
+  
+  fill("white");
+  ellipse(305,35, 30,30);
+}
