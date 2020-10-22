@@ -1,0 +1,30 @@
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(255,255,255);
+  
+  stroke("black");
+  fill("white");
+  rect(0,0,400,400);
+  
+   fill("red");
+  rect(80,0, 320, 280);
+  
+  fill("yellow");
+  rect(360,340, 50,60);
+  
+  fill("blue");
+  rect(0,280, 80,120);
+  
+  fill("black");
+  rect(80, 0, 10, 400);
+  rect(0, 120, 80, 20);
+  rect(0,280,400,10);
+  rect(360, 280,10, 120);
+  rect(360, 340, 50, 15);
+  
+ 
+}
