@@ -1,0 +1,86 @@
+//bubbles in a water tank
+//let x_1, y_1;
+
+function setup() {
+  createCanvas(720, 400);
+  // set the starting position of your bubbles 
+  x_1 = 360; // bubble 1
+  y_1 = 400;
+  
+  x_2 = 200; // bubble 2
+  y_2 = 400;
+  
+  x_3 = 500; // bubble 3
+  y_3 = 400;
+  
+  x_4 = 160; // bubble 4
+  y_4 = 300;
+  
+  x_5 = 560; // bubble 5
+  y_5 = 350;
+  
+  x_6 = 330; // bubble 6
+  y_6 = 250;
+  
+}
+
+function draw() {
+   background(255);
+  
+  //a blue water tank
+ fill(186, 235, 255);
+ rect(120,150,480,250);
+  
+  // Draw a bubble
+  stroke(255);
+  fill(250);
+  
+  ellipse(x_1, y_1, 24, 24); // bubble 1
+  ellipse(x_2, y_2, 30, 30); // bubble 2
+  ellipse(x_3, y_3, 40, 40); // bubble 3
+  ellipse(x_4, y_4, 10, 10); // bubble 4
+  ellipse(x_5, y_5, 8, 8); // bubble 5
+  ellipse(x_6, y_6, 12, 12); // bubble 6
+  
+  // Jiggling randomly on the horizontal axis
+    x_1 = x_1 + random(-2, 2);
+    x_2 = x_2 + random(-3, 3);
+    x_3 = x_3 + random(-1, 1);
+    x_4 = x_4 + random(-1, 1);
+    x_5 = x_5 + random(-1, 1);
+    x_6 = x_6 + random(-1, 1);
+  
+  // Moving up at a constant speed
+  y_1 = y_1 - 1;
+  y_2 = y_2 - 2;
+  y_3 = y_3 - 3;
+  y_4 = y_4 - 2;
+  y_5 = y_5 - 3;
+  y_6 = y_6 - 4;
+  
+  // Reset to the bottom
+  if (y_1 < 150) {
+    y_1 = 400;
+  }
+  
+   if (y_2 < 150) {
+    y_2 = 400;
+  }
+  
+   if (y_3 < 150) {
+    y_3 = 400;
+  }
+  
+  if (y_4 < 150) {
+    y_4 = 400;
+  }
+  
+   if (y_5 < 150) {
+    y_5 = 400;
+  }
+  
+   if (y_6 < 150) {
+    y_6 = 400;
+  }
+}
+
