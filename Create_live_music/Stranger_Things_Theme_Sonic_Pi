@@ -1,0 +1,77 @@
+# Stranger Things!
+# Music by Kyle Dixon and Michael Stein
+# Code by Dr Christine Yu
+
+use_bpm 75
+
+in_thread do
+  live_loop :drum1 do
+    sample :bd_klub, amp: 9
+    sleep 0.25
+    sample :bd_klub, amp: 7
+    sleep 0.75
+  end
+  
+end
+
+in_thread do
+  use_synth :saw
+  play :c5, attack: 1, amp: 0.6, release: 3
+  
+  sleep 10
+end
+
+
+in_thread do
+  live_loop :melody1 do
+    
+    # Try using different synth in this live_loop! :)
+    # :dark_ambience
+    # :hollow
+    # :pluck
+    # :dpulse
+    # :dull_bell
+    
+    use_synth :hollow
+    
+    play_pattern_timed [:c4, :e4, :g4, :b4, :c5, :b4, :g4, :e4], [0.25], amp: 5
+  end
+end
+
+
+
+
+in_thread do
+  use_synth :tech_saws
+  play :c3, amp: 2, release: 4, cutoff: 50
+  sleep 10
+  
+  play_chord [:e3,:e2], amp: 2, release: 1.5
+  sleep 1
+  play :c3, amp: 2, release: 4, cutoff: 50
+  sleep 7
+  
+  play_chord [:c3,:c2], amp: 2, release: 1.5
+  sleep 1
+  play :G3, amp: 2, release: 2
+  sleep 1
+  play :c3, amp: 2, release: 4, cutoff: 50
+  sleep 5
+  
+  play_chord [:d3,:d2], amp: 3, release: 1.5
+  sleep 1
+  play_chord [:e3,:e2], amp: 3, release: 1.5
+  sleep 1
+  play :c3, amp: 2, release: 4, cutoff: 50
+  sleep 4
+  
+  play_chord [:d3,:d2], amp: 2, release: 1.5
+  sleep 1
+  play_chord [:e3,:e2], amp: 2, release: 1.5
+  sleep 1
+  play :c3, amp: 2, release: 4, cutoff: 50
+  sleep 4
+  
+  sleep 8
+  
+end
