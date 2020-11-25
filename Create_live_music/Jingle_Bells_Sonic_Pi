@@ -1,6 +1,9 @@
-use_bpm 80  #80 beats per minute
+# Jingle Bells
 
-#create background drum beats, keep doing it in a loop
+# set the speed as 80 beats per minute
+use_bpm 80
+
+# create background drum beats, keep doing it in a loop
 live_loop :beats do
   sample :drum_snare_hard, amp: 0.3
   sleep 0.5
@@ -10,10 +13,13 @@ live_loop :beats do
   sleep 1
 end
 
-#use a nice bell sound effect for your theme tune
+# let the drum beats come in earlier than the theme tune
+sleep 4
+
+# use a nice bell sound effect for your theme tune
 use_synth :pretty_bell
 
-#sing Mi-Mi-Mi--, Mi-Mi-Mi--
+# sing Mi-Mi-Mi--, Mi-Mi-Mi--
 2.times do
   play :E5
   sleep 0.5
@@ -23,7 +29,67 @@ use_synth :pretty_bell
   sleep 1
 end
 
-#sing Mi-Sol-Do-.Re.Mi----
+# sing Mi-Sol-Do-.Re.Mi----
+play :E5
+sleep 0.5
+play :G5
+sleep 0.5
+play :C5
+sleep 0.75
+play :D5
+sleep 0.25
+
+play :E5
+sleep 2
+
+# sing Fa-Fa-Fa-.Fa.
+play :F5
+sleep 0.5
+play :F5
+sleep 0.5
+play :F5
+sleep 0.75
+play :F5
+sleep 0.25
+
+# sing Fa-Mi-Mi-Mi.Mi.
+play :F5
+sleep 0.5
+play :E5
+sleep 0.5
+play :E5
+sleep 0.5
+play :E5
+sleep 0.25
+play :E5
+sleep 0.25
+
+# sing Mi-Re-Re-Mi-Re--Sol--
+play :E5
+sleep 0.5
+play :D5
+sleep 0.5
+play :D5
+sleep 0.5
+play :E5
+sleep 0.5
+
+play :D5
+sleep 1
+play :G5
+sleep 1
+
+# sing Mi-Mi-Mi--, Mi-Mi-Mi--
+2.times do
+  play :E5
+  sleep 0.5
+  play :E5
+  sleep 0.5
+  play :E5
+  sleep 1
+end
+
+# sing Mi-Sol-Do-.Re.Mi----
 play :E5
 sleep 0.5
 play :G5
@@ -46,7 +112,7 @@ sleep 0.75
 play :F5
 sleep 0.25
 
-#sing Fa-Mi-Mi-Mi.Mi.
+# sing Fa-Mi-Mi-Mi.Mi.
 play :F5
 sleep 0.5
 play :E5
@@ -58,67 +124,7 @@ sleep 0.25
 play :E5
 sleep 0.25
 
-#sing Mi-Re-Re-Mi-Re--Sol--
-play :E5
-sleep 0.5
-play :D5
-sleep 0.5
-play :D5
-sleep 0.5
-play :E5
-sleep 0.5
-
-play :D5
-sleep 1
-play :G5
-sleep 1
-
-#sing Mi-Mi-Mi--, Mi-Mi-Mi--
-2.times do
-  play :E5
-  sleep 0.5
-  play :E5
-  sleep 0.5
-  play :E5
-  sleep 1
-end
-
-#sing Mi-Sol-Do-.Re.Mi----
-play :E5
-sleep 0.5
-play :G5
-sleep 0.5
-play :C5
-sleep 0.75
-play :D5
-sleep 0.25
-
-play :E5
-sleep 2
-
-#sing Fa-Fa-Fa-.Fa.
-play :F5
-sleep 0.5
-play :F5
-sleep 0.5
-play :F5
-sleep 0.75
-play :F5
-sleep 0.25
-
-#sing Fa-Mi-Mi-Mi.Mi.
-play :F5
-sleep 0.5
-play :E5
-sleep 0.5
-play :E5
-sleep 0.5
-play :E5
-sleep 0.25
-play :E5
-sleep 0.25
-
-#sing Sol-Sol-Fa-Re-Do---
+# sing Sol-Sol-Fa-Re-Do---
 play :G5
 sleep 0.5
 play :G5
