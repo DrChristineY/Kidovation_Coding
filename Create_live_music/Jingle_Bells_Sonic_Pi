@@ -1,7 +1,7 @@
 # Jingle Bells
 
-# set the speed as 80 beats per minute
-use_bpm 80
+# set the speed as 90 beats per minute
+use_bpm 90
 
 # create background drum beats, keep doing it in a loop
 live_loop :beats do
